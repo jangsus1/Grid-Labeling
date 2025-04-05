@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/GlobalConfigSchema.json",
+  "configsList": [
+    "adaptive",
+    "static",
+    "bubble",
+    "importAnnot"
+  ],
+  "configs": {
+    "adaptive": {
+      "path": "adaptive_blur/config.json"
+    },
+    "static": {
+      "path": "static_blur/config.json"
+    },
+    "bubble": {
+      "path": "bubble/config.json"
+    },
+    "importAnnot": {
+      "path": "importAnnot/config.json"
+    }
+  }
+} 

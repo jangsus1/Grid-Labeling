@@ -1,0 +1,597 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.2/src/parser/LibraryConfigSchema.json",
+  "description": "Calvi test wit 15 questionaires.",
+  "reference": "Ge, Lily W., Yuan Cui, and Matthew Kay. Calvi: Critical thinking assessment for literacy in visualizations. Proceedings of the 2023 CHI conference on human factors in computing systems. 2023.",
+  "doi": "10.1145/3544548.3581406",
+  "components": {
+    "calvi1": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "barchart"
+      },
+      "instruction": "What is the number of concert tickets sold on Aug 10 as a proportion of that on Aug 11?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi1.png",
+      "style": {
+        "width": "500px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi1",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "20%",
+            "40%",
+            "60%",
+            "80%",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi1",
+          "answer": "80%"
+        }
+      ]
+    },
+    "calvi2": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "choropleth"
+      },
+      "instruction": "Predatory species Z is more prevalent in NC than in AZ.",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi2.png",
+      "style": {
+        "width": "700px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi2",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "True",
+            "False",
+            "Cannot be inferred / inadequate information",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi2",
+          "answer": "False"
+        }
+      ]
+    },
+    "calvi3": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "linechart"
+      },
+      "instruction": "Which of the following is true about the annual number of new moview released in city X?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi3.png",
+      "style": {
+        "width": "500px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi3",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "There were more new movies released in 1992 than in 1994.",
+            "2000 had the most number of new movies released.",
+            "There were more new movies released in 1996 than in 1995.",
+            "None of the above",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi3",
+          "answer": "There were more new movies released in 1992 than in 1994."
+        }
+      ]
+    },
+    "calvi4": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "choropleth"
+      },
+      "instruction": "Which of the following is true about the prevalence of the plant species Y?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi4.png",
+      "style": {
+        "width": "700px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi4",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "It is more prevalent in region D than in E.",
+            "It is less prevalent in region B than in C.",
+            "It is more prevalent in region C than in A.",
+            "It is less prevalent in region C than in D.",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi4",
+          "answer": "It is less prevalent in region C than in D."
+        }
+      ]
+    },
+    "calvi5": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "stackedBar100"
+      },
+      "instruction": "Which of the following is true about the three brands of shampoo in city Y from 2001 to 2005?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi5.png",
+      "style": {
+        "width": "500px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi5",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "The market share of brand C is on an increasing trend from 2001 to 2005.",
+            "The market share of brand C is higher in 2001 than in 2002.",
+            "Brand B has the largest market share in 2001 compared to its market share in the other years.",
+            "None of the above.",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi5",
+          "answer": "The market share of brand C is higher in 2001 than in 2002."
+        }
+      ]
+    },
+    "calvi6": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "barchart"
+      },
+      "instruction": "Approximately, what is the numver of votes for candidate A as a proportion of those for candidate B?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi6.png",
+      "style": {
+        "width": "500px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi6",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "50%",
+            "60%",
+            "70%",
+            "80%",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi6",
+          "answer": "80%"
+        }
+      ]
+    },
+    "calvi7": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "choropleth"
+      },
+      "instruction": "Was the average amount of precipitation over 15 years in region D higher than that in region C?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi7.png",
+      "style": {
+        "width": "700px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi7",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot be inferred / inadequate information",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi7",
+          "answer": "Cannot be inferred / inadequate information"
+        }
+      ]
+    },
+    "calvi8": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "stackedbar"
+      },
+      "instruction": "Assuming today is Feb 20, 2022, which of the following is true about the vegetables planted by the three farms?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi8.png",
+      "style": {
+        "width": "500px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi8",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "All three farms planted more vegetables in 2022 than they did in the previous years.",
+            "All three farms planted fewer vegetables in 2022 than they did in the previous years.",
+            "All three farms planted about the same amount of vegetables in 2022 than they did in the previous years.",
+            "None of the above.",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi8",
+          "answer": "None of the above."
+        }
+      ]
+    },
+    "calvi9": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "areachart"
+      },
+      "instruction": "Assuming today is May 01, 2022, which of the following statements is true?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi9.png",
+      "style": {
+        "width": "500px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi9",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Company Z had more employees in 2018 than in 2020.",
+            "The number of new employees per year fell sharply in 2022.",
+            "The total number of employees in company Z decreased in 2022.",
+            "None of the above.",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi9",
+          "answer": "None of the above."
+        }
+      ]
+    },
+    "calvi10": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "scatterplot"
+      },
+      "instruction": "Does any member of species C weigh more than 5 lbs?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi10.png",
+      "style": {
+        "width": "700px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi10",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot be inferred / inadequate information",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi10",
+          "answer": "Cannot be inferred / inadequate information"
+        }
+      ]
+    },
+    "calvi11": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "choropleth"
+      },
+      "instruction": "Which region had the highest number of confirmed cases per 1,000 people?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi11.png",
+      "style": {
+        "width": "700px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi11",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "Cannot be inferred / inadequate information",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi11",
+          "answer": "Cannot be inferred / inadequate information"
+        }
+      ]
+    },
+    "calvi12": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "linechart"
+      },
+      "instruction": "what is the trend of sales in gitt shop A from Jan to Dec?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi12.png",
+      "style": {
+        "width": "500px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi12",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Generally increasing",
+            "Generally decreasing",
+            "Generally constant",
+            "Cannot be inferred / inadequate information",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi12",
+          "answer": "Cannot be inferred / inadequate information"
+        }
+      ]
+    },
+    "calvi13": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "piechart"
+      },
+      "instruction": "More than half of the people in country Z prefer reading at night.",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi13.png",
+      "style": {
+        "width": "500px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi13",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "True",
+            "False",
+            "Cannot be inferred / inadequate information",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi13",
+          "answer": "False"
+        }
+      ]
+    },
+    "calvi14": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "barchart"
+      },
+      "instruction": "the residents of town Y area voting on a favorite hiking trail, and half of the votes have been counted. The poll closes on Sep 01, 2022. Which of the following is true?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi14.png",
+      "style": {
+        "width": "500px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi14",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Hiking trail A will be voted as the favorite trail.",
+            "Hiking trail B will be voted as the favorite trail.",
+            "Hiking trail C will be voted as the favorite trail.",
+            "Too early to say.",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi14",
+          "answer": "Too early to say."
+        }
+      ]
+    },
+    "calvi15": {
+      "meta": {
+        "trueAnswer": 0,
+        "chartType": "barchart"
+      },
+      "instruction": "In town X, what is the approximate average number of customers at mall A from Jan to Mar?",
+      "instructionLocation": "sidebar",
+      "type": "image",
+      "path": "libraries/calvi/assets/calvi15.png",
+      "style": {
+        "width": "500px"
+      },
+      "nextButtonLocation": "sidebar",
+      "nextButtonDisableTime": 45000,
+      "nextButtonEnableTime": 5000,
+      "response": [
+        {
+          "id": "res-calvi15",
+          "prompt": "Your answer",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "200",
+            "300",
+            "400",
+            "500",
+            "Skip"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "res-calvi15",
+          "answer": "400"
+        }
+      ]
+    }
+  },
+  "sequences": {
+    "full": {
+      "id": "calvi",
+      "order": "latinSquare",
+      "components": [
+        "calvi1",
+        "calvi2",
+        "calvi3",
+        "calvi4",
+        "calvi5",
+        "calvi6",
+        "calvi7",
+        "calvi8",
+        "calvi9",
+        "calvi10",
+        "calvi11",
+        "calvi12",
+        "calvi13",
+        "calvi14",
+        "calvi15"
+      ]
+    }
+  }
+}
