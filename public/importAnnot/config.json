@@ -1,0 +1,399 @@
+{
+    "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/StudyConfigSchema.json",
+    "studyMetadata": {
+        "title": "Importance Annotation",
+        "version": "dev",
+        "authors": [
+            "Minsuk Chang"
+        ],
+        "date": "2025-01-23",
+        "description": "Importance Annotation",
+        "organizations": [
+            "Georgia Institute of Technology"
+        ]
+    },
+    "importedLibraries": [
+        "mini-vlat"
+    ],
+    "uiConfig": {
+        "contactEmail": "minsuk@gatech.edu",
+        "helpTextPath": "tools_extend/assets/welcome.md",
+        "logoPath": "revisitAssets/revisitLogoSquare.svg",
+        "withProgressBar": true,
+        "autoDownloadStudy": false,
+        "urlParticipantIdParam": "PROLIFIC_PID",
+        "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/submissions/complete?cc=C1DEBJ8K](https://app.prolific.com/submissions/complete?cc=C1DEBJ8K)",
+        "sidebar": true
+    },
+    "baseComponents": {
+        "important_annot": {
+            "type": "react-component",
+            "path": "importAnnot/assets/importantannot.jsx",
+            "response": [
+                {
+                    "id": "answer",
+                    "prompt": "Answer for the question:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "shortText"
+                },
+                {
+                    "id": "annotations",
+                    "prompt": "Annotated Area:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "reactive"
+                }
+            ],
+            "instructionLocation": "aboveStimulus",
+            "nextButtonLocation": "sidebar"
+        }
+    },
+    "components": {
+        "welcome": {
+            "type": "markdown",
+            "path": "importAnnot/assets/welcome.md",
+            "response": []
+        },
+        "instructions": {
+            "type": "markdown",
+            "path": "importAnnot/assets/instructions.md",
+            "response": []
+        },
+        "consent": {
+            "type": "markdown",
+            "path": "importAnnot/assets/consent.md",
+            "nextButtonText": "I agree",
+            "response": []
+        },
+        "intro_importAnnot": {
+            "type": "markdown",
+            "path": "importAnnot/assets/intro_importAnnot.md",
+            "response": []
+        },
+        "vlat_intro": {
+            "type": "markdown",
+            "path": "importAnnot/assets/vlat_intro.md",
+            "response": []
+        },
+        "demographics": {
+            "type": "markdown",
+            "path": "importAnnot/assets/blank.md",
+            "response": [
+                {
+                    "id": "gender",
+                    "prompt": "What is your **gender**?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "radio",
+                    "withOther": true,
+                    "options": [
+                        "Woman",
+                        "Man",
+                        "Prefer not to say"
+                    ],
+                    "withDivider": true
+                },
+                {
+                    "id": "age",
+                    "prompt": "What is your **age**?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "radio",
+                    "options": [
+                        "Under 18 years",
+                        "18-24 years",
+                        "25-34 years",
+                        "35-44 years",
+                        "45-54 years",
+                        "55-64 years",
+                        "65 years or older",
+                        "Prefer not to say"
+                    ],
+                    "withDivider": true
+                },
+                {
+                    "id": "education",
+                    "prompt": "What is the **highest degree or level of education** you have completed?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "radio",
+                    "withOther": true,
+                    "options": [
+                        "Less than high school",
+                        "High school diploma or equivalent",
+                        "Bachelor's degree or equivalent",
+                        "Master's degree or equivalent",
+                        "Doctoral degree or equivalent"
+                    ],
+                    "withDivider": true
+                }
+            ]
+        },
+        "NASA": {
+            "type": "markdown",
+            "path": "importAnnot/assets/blank.md",
+            "response": [
+                {
+                    "id": "mental-demand",
+                    "prompt": "How **mentally demanding** was the task?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "numItems": 7,
+                    "rightLabel": "Very High",
+                    "leftLabel": "Very Low",
+                    "withDivider": true
+                },
+                {
+                    "id": "physical-demand",
+                    "prompt": "How **physically demanding** was the task?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "numItems": 7,
+                    "rightLabel": "Very High",
+                    "leftLabel": "Very Low",
+                    "withDivider": true
+                },
+                {
+                    "id": "temporal-demand",
+                    "prompt": "How **hurried or rushed** was the pace of the task?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "numItems": 7,
+                    "rightLabel": "Very High",
+                    "leftLabel": "Very Low",
+                    "withDivider": true
+                },
+                {
+                    "id": "performance",
+                    "prompt": "How **successful** were you in accomplishing what you were asked to do?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "numItems": 7,
+                    "rightLabel": "Perfect",
+                    "leftLabel": "Failure",
+                    "withDivider": true
+                },
+                {
+                    "id": "effort",
+                    "prompt": "How **hard** did you have to work to accomplish your level of performance?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "numItems": 7,
+                    "rightLabel": "Very High",
+                    "leftLabel": "Very Low",
+                    "withDivider": true
+                },
+                {
+                    "id": "frustration",
+                    "prompt": "How **insecure, discouraged, irritated, stressed, and annoyed** were you?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "numItems": 7,
+                    "rightLabel": "Very High",
+                    "leftLabel": "Very Low",
+                    "withDivider": true
+                }
+            ]
+        },
+        "importAnnot_chartqa_text_bar_05411753006467.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/05411753006467.png",
+                "question": "What is the highest value in the chart?",
+                "chart_type": "text_bar"
+            }
+        },
+        "importAnnot_chartqa_text_stacked_bar_9280.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/9280.png",
+                "question": "What's the difference of people choosing very important between 2016 and 2010?",
+                "chart_type": "text_stacked_bar"
+            }
+        },
+        "importAnnot_chartqa_text_pie_43.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/43.png",
+                "question": "What's the ratio of people who use Latinx versus people who don't?",
+                "chart_type": "text_pie"
+            }
+        },
+        "importAnnot_chartqa_text_line_19371621021871.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/19371621021871.png",
+                "question": "Between which two years was the public trust in government least?",
+                "chart_type": "text_line"
+            }
+        },
+        "importAnnot_chartqa_notext_line_two_col_4524.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_4524.png",
+                "question": "What is the difference between the highest and lowest poverty rates in California between 2000 and 2019?",
+                "chart_type": "notext_line"
+            }
+        },
+        "importAnnot_chartqa_notext_pie_two_col_61107.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_61107.png",
+                "question": "Assume total respondent as 1000, what is the sum of person will tell 'very Important' and 'important'?",
+                "chart_type": "notext_pie"
+            }
+        },
+        "importAnnot_chartqa_notext_bar_two_col_40186.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/two_col_40186.png",
+                "question": "what is the average of top and bottom bar in the chart?",
+                "chart_type": "notext_bar"
+            }
+        },
+        "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/chartqa/multi_col_60949.png",
+                "question": "How many bars in the chart have larger value than 750000?",
+                "chart_type": "notext_stacked_bar"
+            }
+        },
+        "importAnnot_charxiv_scatterplot_17.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/17.jpg",
+                "question": "How many data points have a DAVIS-2017 J & F Mean score of less than 50?",
+                "chart_type": "scatterplot"
+            }
+        },
+        "importAnnot_charxiv_scatterplot_617.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/617.jpg",
+                "question": "How many Serviced K users which have meters value less than 5?",
+                "chart_type": "scatterplot"
+            }
+        },
+        "importAnnot_charxiv_hist_20.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/20.jpg",
+                "question": " When comparing the proportion of papers from top institutions with a degree of 50 and non-top institutions with a degree of 100, which category exhibits a higher value?",
+                "chart_type": "hist"
+            }
+        },
+        "importAnnot_charxiv_hist_81.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/81.jpg",
+                "question": "What is the most frequent caption length in terms of number of words for MS COCO based on the chart?",
+                "chart_type": "hist"
+            }
+        },
+        "importAnnot_charxiv_contour_954.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/954.jpg",
+                "question": "Is there more large values (>= 7*10^6) when x = 0 than x = 1 generally?",
+                "chart_type": "contour"
+            }
+        },
+        "importAnnot_charxiv_contour_1248.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/1248.jpg",
+                "question": "Does the lowest PB value occur above or below 17,000K?",
+                "chart_type": "contour"
+            }
+        },
+        "importAnnot_charxiv_heatmap_568.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/568.jpg",
+                "question": "What is the smallest value of Granger causality from \"G\" across all the \"Granger causality to\" entries?",
+                "chart_type": "heatmap"
+            }
+        },
+        "importAnnot_charxiv_heatmap_446.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/446.jpg",
+                "question": "Adding up all numbers in each individual column, which column achieves the smallest total value?",
+                "chart_type": "heatmap"
+            }
+        },
+        "importAnnot_charxiv_geo_433.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/433.jpg",
+                "question": "Does Australia display more variation in shade than South America?",
+                "chart_type": "geo"
+            }
+        },
+        "importAnnot_charxiv_geo_550.jpg": {
+            "baseComponent": "important_annot",
+            "parameters": {
+                "image": "https://raw.githubusercontent.com/jangsus1/ChartDataset/main/charxiv/550.jpg",
+                "question": "Is there any region with a positive value according to the scale provided?",
+                "chart_type": "geo"
+            }
+        }
+    },
+    "sequence": {
+        "order": "fixed",
+        "components": [
+            "welcome",
+            "instructions",
+            {
+                "id": "tools",
+                "order": "latinSquare",
+                "numSamples": 1,
+                "components": [
+                    {
+                        "id": "importAnnot",
+                        "order": "fixed",
+                        "components": [
+                            "intro_importAnnot",
+                            {
+                                "id": "main",
+                                "order": "latinSquare",
+                                "components": [
+                                    "importAnnot_chartqa_text_bar_05411753006467.png",
+                                    "importAnnot_chartqa_text_stacked_bar_9280.png",
+                                    "importAnnot_chartqa_text_pie_43.png",
+                                    "importAnnot_chartqa_text_line_19371621021871.png",
+                                    "importAnnot_chartqa_notext_line_two_col_4524.png",
+                                    "importAnnot_chartqa_notext_pie_two_col_61107.png",
+                                    "importAnnot_chartqa_notext_bar_two_col_40186.png",
+                                    "importAnnot_chartqa_notext_stacked_bar_multi_col_60949.png",
+                                    "importAnnot_charxiv_scatterplot_17.jpg",
+                                    "importAnnot_charxiv_scatterplot_617.jpg",
+                                    "importAnnot_charxiv_hist_20.jpg",
+                                    "importAnnot_charxiv_hist_81.jpg",
+                                    "importAnnot_charxiv_contour_954.jpg",
+                                    "importAnnot_charxiv_contour_1248.jpg",
+                                    "importAnnot_charxiv_heatmap_568.jpg",
+                                    "importAnnot_charxiv_heatmap_446.jpg",
+                                    "importAnnot_charxiv_geo_433.jpg",
+                                    "importAnnot_charxiv_geo_550.jpg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "NASA",
+            "vlat_intro",
+            "$mini-vlat.se.full",
+            "demographics"
+        ]
+    }
+}
