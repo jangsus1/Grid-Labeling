@@ -1,13 +1,13 @@
 {
     "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/StudyConfigSchema.json",
     "studyMetadata": {
-        "title": "Bubble View",
+        "title": "BubbleView",
         "version": "dev",
         "authors": [
             "Minsuk Chang"
         ],
         "date": "2025-01-23",
-        "description": "Bubble View",
+        "description": "BubbleView",
         "organizations": [
             "Georgia Institute of Technology"
         ]
