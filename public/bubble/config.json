@@ -63,12 +63,6 @@
             "path": "bubble/assets/instructions.md",
             "response": []
         },
-        "consent": {
-            "type": "markdown",
-            "path": "bubble/assets/consent.md",
-            "nextButtonText": "I agree",
-            "response": []
-        },
         "intro_bubble": {
             "type": "markdown",
             "path": "bubble/assets/intro_bubble.md",

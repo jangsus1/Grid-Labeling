@@ -60,12 +60,6 @@
             "path": "importAnnot/assets/instructions.md",
             "response": []
         },
-        "consent": {
-            "type": "markdown",
-            "path": "importAnnot/assets/consent.md",
-            "nextButtonText": "I agree",
-            "response": []
-        },
         "intro_importAnnot": {
             "type": "markdown",
             "path": "importAnnot/assets/intro_importAnnot.md",

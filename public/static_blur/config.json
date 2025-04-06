@@ -60,12 +60,6 @@
             "path": "static_blur/assets/instructions.md",
             "response": []
         },
-        "consent": {
-            "type": "markdown",
-            "path": "static_blur/assets/consent.md",
-            "nextButtonText": "I agree",
-            "response": []
-        },
         "intro_staticBlur": {
             "type": "markdown",
             "path": "static_blur/assets/intro_static.md",
