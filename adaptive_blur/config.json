@@ -1,13 +1,13 @@
 {
     "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/StudyConfigSchema.json",
     "studyMetadata": {
-        "title": "Adaptive Blur",
+        "title": "Adaptive Grid",
         "version": "dev",
         "authors": [
             "Minsuk Chang"
         ],
         "date": "2025-01-23",
-        "description": "Adaptive Blur",
+        "description": "Adaptive Grid Demo",
         "organizations": [
             "Georgia Institute of Technology"
         ]
@@ -58,12 +58,6 @@
         "instructions": {
             "type": "markdown",
             "path": "adaptive_blur/assets/instructions.md",
-            "response": []
-        },
-        "consent": {
-            "type": "markdown",
-            "path": "adaptive_blur/assets/consent.md",
-            "nextButtonText": "I agree",
             "response": []
         },
         "intro_adaptiveBlur": {

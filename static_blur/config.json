@@ -1,13 +1,13 @@
 {
     "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/StudyConfigSchema.json",
     "studyMetadata": {
-        "title": "Static Blur",
+        "title": "Static Grid",
         "version": "dev",
         "authors": [
             "Minsuk Chang"
         ],
         "date": "2025-01-23",
-        "description": "Static Blur",
+        "description": "Static Grid",
         "organizations": [
             "Georgia Institute of Technology"
         ]
@@ -58,12 +58,6 @@
         "instructions": {
             "type": "markdown",
             "path": "static_blur/assets/instructions.md",
-            "response": []
-        },
-        "consent": {
-            "type": "markdown",
-            "path": "static_blur/assets/consent.md",
-            "nextButtonText": "I agree",
             "response": []
         },
         "intro_staticBlur": {
