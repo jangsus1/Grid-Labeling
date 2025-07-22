@@ -1,24 +1,34 @@
 # Grid-Labeling
-Interactive demo for EuroVis 2025 paper "Grid Labeling: Crowdsourcing Task-Specific Importance from Visualizations"
 
-## Dataset
+Interactive demo for the EuroVis 2025 paper:
+
+**"Grid Labeling: Crowdsourcing Task-Specific Importance from Visualizations"**
+
+---
+
+## 📊 Dataset
 
 - **masks/**: Contains all collected importance masks from four different tools.
 
-## Interactive Demo
+---
 
-You can access the interactive demo [here](https://jangsus1.github.io/Grid-Labeling/) built with [ReVISit](https://revisit.dev).
+## 🚀 Interactive Demo
 
-## Citation
+Access the interactive demo [here](https://jangsus1.github.io/Grid-Labeling/) — built with [ReVISit](https://revisit.dev).
 
-Below is the BibTeX block for citation. Please fill in the details as necessary.
+---
+
+## 📚 Citation
+
+If you use this work, please cite:
 
 ```bibtex
-@inproceedings{TBD,
-  author    = {},
-  title     = {},
-  booktitle = {},
-  year      = {},
-  publisher = {},
-  note      = {}
+@inproceedings{Chang2025GridLabeling,
+  author         = {Chang, Minsuk and Wang, Yao and Wang, Huichen Will and Bulling, Andreas and Bearfield, Cindy Xiong},
+  title          = {Grid Labeling: Crowdsourcing Task‑Specific Importance from Visualizations},
+  booktitle      = {EuroVis 2025 – Short Papers},
+  year           = {2025},
+  publisher      = {The Eurographics Association},
 }
+```
+

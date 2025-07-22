@@ -1,0 +1,11 @@
+{
+  "total_tiles": 48,
+  "background_tiles": 20,
+  "edge_tiles": 8,
+  "text_tiles": 20,
+  "grid_ratio": 0.05,
+  "image_size": [
+    600,
+    850
+  ]
+}
